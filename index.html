@@ -278,7 +278,7 @@
 
     // Buscar dados do cliente
     const{data:cliente}=await supabase
-      .from('clientes')
+      .from('clientes_portal')
       .select('*')
       .eq('email',currentUser.email)
       .single();
@@ -514,4 +514,4 @@
     .then(r=>r.text()).then(t=>{eval(t);}).catch(()=>{});
 </script>
 </body>
-</html>
+<
